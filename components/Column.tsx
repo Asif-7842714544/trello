@@ -67,7 +67,7 @@ function Column({ id, todos, index }: Props) {
                     return (
                       <Draggable
                         key={todo.$id}
-                        draggableId={todo.$id}
+                        draggableId={todo.$id as string}
                         index={index}
                       >
                         {(provided) => (

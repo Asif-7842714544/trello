@@ -1,4 +1,4 @@
-import { Client, Account, ID, Databases, Storage } from "appwrite";
+const { Client, Account, ID, Databases, Storage } = require("appwrite");
 
 const client = new Client();
 

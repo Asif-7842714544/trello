@@ -155,7 +155,6 @@ function Modal() {
                     >
                       Add task
                     </button>
-                    <button onClick={(e) => handleSubmit(e)}>Test</button>
                   </div>
                 </Dialog.Panel>
               </Transition.Child>

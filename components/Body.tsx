@@ -13,6 +13,7 @@ function Board() {
       state.updateTodoInDb,
     ]
   );
+
   const handleOnDragEnd = (result: DropResult) => {
     const { destination, source, type } = result;
 
@@ -93,18 +94,17 @@ function Board() {
       setBoardState({ ...board, columns: newColumns });
     }
   };
+
   useEffect(() => {
     getboard();
   }, [getboard]);
-
-  // console.log(board);
 
   return (
     <DragDropContext onDragEnd={handleOnDragEnd}>
       <Droppable droppableId="Body" direction="horizontal" type="column">
         {(provided) => (
           <div
-            className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-7xl mx-auto "
+            className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-7xl mt-8 mx-auto "
             {...provided.droppableProps}
             ref={provided.innerRef}
           >

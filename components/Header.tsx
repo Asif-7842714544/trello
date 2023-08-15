@@ -51,7 +51,7 @@ function Header() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center px-5 md:py-5  ">
+      {/* <div className="flex items-center justify-center px-5 md:py-5  ">
         <p
           className="flex p-2 items-center text-sm font-light pr-5 shadow-xl 
         rounded-xl w-fit bg-white italic max-w-3xl text-blue-500 "
@@ -59,7 +59,7 @@ function Header() {
           <UserCircleIcon className="h-10 w-10 inline-block text-blue-500 mr-1  " />
           Gpt is summerising your task
         </p>
-      </div>
+      </div> */}
     </header>
   );
 }
