@@ -32,16 +32,18 @@ function Header() {
           {/* search box */}
           <form
             className="flex items-center bg-white space-x-5 
-        rounded-md p-2 shadow-md flex-1 md:flex-initial   "
+        rounded-3xl p-2 shadow-md flex-1 md:flex-initial    "
           >
-            <MagnifyingGlassIcon className="h-6 w-6 text-gray-400 " />
-            <input
-              type="text"
-              value={searchString}
-              onChange={(e) => setSearchString(e.target.value)}
-              placeholder="Search...."
-              className="flex-1 outline-none p-2"
-            />
+            <div className="flex items-center">
+              <MagnifyingGlassIcon className="h-6 w-6 text-gray-400 " />
+              <input
+                type="text"
+                value={searchString}
+                onChange={(e) => setSearchString(e.target.value)}
+                placeholder="Search...."
+                className="flex-1 outline-none p-2 "
+              />
+            </div>
             <button type="submit" hidden>
               Search
             </button>
